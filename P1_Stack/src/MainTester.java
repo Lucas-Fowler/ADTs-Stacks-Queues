@@ -24,6 +24,9 @@ class MainTester {
 	void testPush() {
 		Stack<Integer> temp = new Stack<Integer>();
 		temp.push(2);
+		temp.push(5);
+		
+		assertEquals(5, temp.pop());
 	}
 	
 	

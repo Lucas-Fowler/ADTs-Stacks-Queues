@@ -5,9 +5,11 @@ public class Stack<T> {
 	//1) ------------- instance vars
 	
 	ArrayList<T> data;
+	ArrayList<T> dataMax;
 	public Stack() {
 		//2) What should the constructor do?
 		data = new ArrayList<T>();
+		dataMax = new ArrayList<T>();
 	}
 	
 	
@@ -45,5 +47,7 @@ public class Stack<T> {
 		T i = data.get(data.size()-1);
 		return i;
 	}
+	
+	
 	
 }
